@@ -6,8 +6,9 @@ The requirements for this challenge were to use unsupervised learning technique 
 
 ### Summary
 Using the elbow curve method to normalize the data to find the optimal k value for the k-Means model that will use all of the original features of the dataset. 
+![kvalues elbow curve](https://user-images.githubusercontent.com/117309455/236634605-ca8cea3a-c730-408e-8ae1-7d7f6902ca8b.png)
 
-![Elbow curve plot showing a value of 4 for k to be optimal for the dataset with all features](/Resources/kvalues_elbow_curve.png) 
+![Elbow curve plot showing a value of 4 for k to be optimal for the dataset with all features] 
 
 A k-Means model was trained and predicted using the best k values, resulting in four clusters of cryptocurrencies. The inertia of each cluster was large enough to consider reducing the number of features.
 
