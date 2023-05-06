@@ -12,16 +12,36 @@ Using the elbow curve method to normalize the data to find the optimal k value f
 
 A k-Means model was trained and predicted using the best k values, resulting in four clusters of cryptocurrencies. The inertia of each cluster was large enough to consider reducing the number of features.
 
-![A scatter plot showing 4 clusters with heavy inertia](/Resources/scatter_plot_crypto_currency.png)
+![A scatter plot showing 4 clusters with heavy inertia] ![scatter plot crypto currency](https://user-images.githubusercontent.com/117309455/236634683-4c909bbd-f141-4617-9e14-2f6eb93d3e11.png)
+
 
 To reduce the amount of features used, the Principal Component Analysis (PCA) was applied to create three primary clusters.
 
-![DataFrame holding 3 primary clusters as columns and cryptocurrency as index](/Resources/PCA_analysis.png)
+![DataFrame holding 3 primary clusters as columns and cryptocurrency as index] ![PCA analysis](https://user-images.githubusercontent.com/117309455/236634698-687d9810-2ba8-4199-aeb8-67dc46ad5427.png)
+
 
 Then the PCA data was used to recalculate the optimal k value for the k-Means model.
 
-![Elbow curve line plot from the PCA data that shows 4 to be the optimal k value](/Resources/pca_k_values_elbow_curve.png)
+![Elbow curve line plot from the PCA data that shows 4 to be the optimal k value] ![kvalues elbow curve](https://user-images.githubusercontent.com/117309455/236634736-144b6d88-2e03-4212-994b-c15c03a7611a.png)
+
 
 Finally, a new cluster was drawn using the best k value of the PCA feature.
 
-![Scatter plot showing 4 low inertia clusters generated using the PCA dataframe](/Resources/scatter_plot_crypto_currency.png)
+![Scatter plot showing 4 low inertia clusters generated using the PCA dataframe] ![scatter plot crypto currency](https://user-images.githubusercontent.com/117309455/236634756-4c57a463-2bd6-4eb7-a5f3-925208a773a0.png)
+
+---
+
+## Technologies
+
+This project uses Jupyter Notebook using a Python 3 kernel. 
+
+Dependencies used: 
+1. [Jupyter] - Running code 
+2. [Conda] - Dev environment
+3. [Pandas] - Data analysis
+4. [Matplotlib] - Data visualization
+5. [Numpy] - Data calculations & Pandas support
+6. [hvPlot] - Interactive Pandas plots 
+7. [scikit-learn] - kMeans clustering, PCA, and StandardScaler 
+
+---
