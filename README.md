@@ -6,28 +6,29 @@ The requirements for this challenge were to use unsupervised learning technique 
 
 ### Summary
 Using the elbow curve method to normalize the data to find the optimal k value for the k-Means model that will use all of the original features of the dataset. 
-![kvalues elbow curve](https://user-images.githubusercontent.com/117309455/236634605-ca8cea3a-c730-408e-8ae1-7d7f6902ca8b.png)
-
-![Elbow curve plot showing a value of 4 for k to be optimal for the dataset with all features] 
+(https://user-images.githubusercontent.com/117309455/236634605-ca8cea3a-c730-408e-8ae1-7d7f6902ca8b.png)
+Elbow curve plot showing a value of 4 for k to be optimal for the dataset with all features
 
 A k-Means model was trained and predicted using the best k values, resulting in four clusters of cryptocurrencies. The inertia of each cluster was large enough to consider reducing the number of features.
 
-![A scatter plot showing 4 clusters with heavy inertia] ![scatter plot crypto currency](https://user-images.githubusercontent.com/117309455/236634683-4c909bbd-f141-4617-9e14-2f6eb93d3e11.png)
-
+(https://user-images.githubusercontent.com/117309455/236634683-4c909bbd-f141-4617-9e14-2f6eb93d3e11.png)
+A scatter plot showing 4 clusters with heavy inertia
 
 To reduce the amount of features used, the Principal Component Analysis (PCA) was applied to create three primary clusters.
 
-![DataFrame holding 3 primary clusters as columns and cryptocurrency as index] ![PCA analysis](https://user-images.githubusercontent.com/117309455/236634698-687d9810-2ba8-4199-aeb8-67dc46ad5427.png)
-
+(https://user-images.githubusercontent.com/117309455/236634698-687d9810-2ba8-4199-aeb8-67dc46ad5427.png)
+DataFrame holding 3 primary clusters as columns and cryptocurrency as inde
 
 Then the PCA data was used to recalculate the optimal k value for the k-Means model.
 
-![Elbow curve line plot from the PCA data that shows 4 to be the optimal k value] ![kvalues elbow curve](https://user-images.githubusercontent.com/117309455/236634736-144b6d88-2e03-4212-994b-c15c03a7611a.png)
+(https://user-images.githubusercontent.com/117309455/236634736-144b6d88-2e03-4212-994b-c15c03a7611a.png)
+Elbow curve line plot from the PCA data that shows 4 to be the optimal k value
 
 
 Finally, a new cluster was drawn using the best k value of the PCA feature.
 
-![Scatter plot showing 4 low inertia clusters generated using the PCA dataframe] ![scatter plot crypto currency](https://user-images.githubusercontent.com/117309455/236634756-4c57a463-2bd6-4eb7-a5f3-925208a773a0.png)
+(https://user-images.githubusercontent.com/117309455/236634756-4c57a463-2bd6-4eb7-a5f3-925208a773a0.png)
+Scatter plot showing 4 low inertia clusters generated using the PCA dataframe
 
 ---
 
